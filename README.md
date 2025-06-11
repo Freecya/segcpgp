@@ -50,7 +50,7 @@ Code and data for the likelihood ratio experiments are included in notebooks/lik
 We would love it if you used our work. If you do, we would appreciate it if you cited us:
 
 ```
-citation
+bibtex will be added here.
 ```
 
 If you are using our work and you have questions about the implementation, possible extensions, or if you just want to have a chat with us, mail janneke.verbeek at ru.nl
