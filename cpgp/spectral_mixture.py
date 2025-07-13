@@ -97,6 +97,7 @@ class SpectralMixture(Kernel):
         a = np.random.rand(10000, 1)
         _, q = np.histogram(a, spec_cdf, density=True)
         bins = np.digitize(a, q)
+        bins = np.clip(bins, 1, len(spec_cdf) - 1) # 这里修改， 防止越界
         slopes = (spec_cdf[bins] - spec_cdf[bins - 1]) / (freqs[bins] - freqs[bins - 1])
         intercepts = spec_cdf[bins - 1] - slopes * freqs[bins - 1]
         inv_spec = (a - intercepts) / slopes
