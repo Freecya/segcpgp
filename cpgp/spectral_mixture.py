@@ -1,3 +1,4 @@
+print("✅ 正在使用本地版本的 SpectralMixture")
 from typing import Optional, Sequence
 
 import tensorflow as tf
